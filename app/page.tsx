@@ -16,13 +16,13 @@ export default function Home() {
       {/* ─── HEADER ─── */}
       <header className="w-full border-b border-white/10">
         <div className="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center">
+          <div className="flex items-center flex-1 min-w-0 mr-6">
             <Image
               src="/header.png"
               alt="Encabezado institucional"
-              width={320}
+              width={900}
               height={80}
-              className="object-contain"
+              className="object-contain object-left w-full h-auto"
               draggable={false}
               priority
             />
