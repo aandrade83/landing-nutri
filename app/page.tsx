@@ -160,6 +160,14 @@ export default function Home() {
               </p>
             </div>
             <Image
+              src="/enu.png"
+              alt="ENU"
+              width={160}
+              height={80}
+              className="object-contain opacity-80"
+              draggable={false}
+            />
+            <Image
               src="/footer.png"
               alt="Logo footer"
               width={260}
