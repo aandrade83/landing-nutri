@@ -16,23 +16,16 @@ export default function Home() {
       {/* ─── HEADER ─── */}
       <header className="w-full border-b border-white/10">
         <div className="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center">
             <Image
-              src="/ucr.png"
-              alt="Universidad de Costa Rica"
-              width={56}
-              height={56}
+              src="/header.png"
+              alt="Encabezado institucional"
+              width={320}
+              height={80}
               className="object-contain"
               draggable={false}
+              priority
             />
-            <div>
-              <p className="text-white/50 text-xs uppercase tracking-widest font-medium">
-                Universidad de Costa Rica
-              </p>
-              <p className="text-white/80 text-sm font-serif font-medium leading-tight">
-                Escuela de Nutrición
-              </p>
-            </div>
           </div>
 
           <span className="hidden sm:inline-flex items-center gap-2 bg-gold-400/10 border border-gold-400/30 text-gold-300 text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-full">
@@ -156,8 +149,8 @@ export default function Home() {
 
       {/* ─── FOOTER ─── */}
       <footer className="w-full border-t border-white/10 mt-8">
-        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-center sm:text-left">
+        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col items-center gap-4">
+          <div className="text-center">
             <p className="text-white/70 text-sm font-serif font-semibold">
               Laura Milena Andrade Perez
             </p>
@@ -165,10 +158,17 @@ export default function Home() {
               Nutricionista MBA &nbsp;·&nbsp; Cód. CPN 201-10
             </p>
           </div>
-          <div className="text-white/25 text-xs text-center sm:text-right">
-            <p>© {new Date().getFullYear()} Todos los derechos reservados.</p>
-            <p className="mt-0.5">Material de uso académico restringido.</p>
-          </div>
+          <Image
+            src="/footer.png"
+            alt="Logo footer"
+            width={260}
+            height={80}
+            className="object-contain opacity-80"
+            draggable={false}
+          />
+          <p className="text-white/25 text-xs text-center">
+            © {new Date().getFullYear()} Todos los derechos reservados. Material de uso académico restringido.
+          </p>
         </div>
       </footer>
     </div>
