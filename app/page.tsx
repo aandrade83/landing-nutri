@@ -83,9 +83,13 @@ export default function Home() {
               Dra. Laura Maroto
             </h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              Máster en Nutrición Clínica Renal
+              Licenciada en Nutrición
               <br />
-              Nutricionista
+              Especialista en Nutrición Clínica Renal
+              <br />
+              Servicio de Nefrología, Hospital Calderón Guardia
+              <br />
+              Consulta privada
             </p>
           </div>
         </section>
