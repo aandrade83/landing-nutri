@@ -149,23 +149,25 @@ export default function Home() {
 
       {/* ─── FOOTER ─── */}
       <footer className="w-full border-t border-white/10 mt-8">
-        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col items-center gap-4">
-          <div className="text-center">
-            <p className="text-white/70 text-sm font-serif font-semibold">
-              Laura Milena Andrade Perez
-            </p>
-            <p className="text-white/40 text-xs mt-0.5">
-              Nutricionista MBA &nbsp;·&nbsp; Cód. CPN 201-10
-            </p>
+        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-left">
+              <p className="text-white/70 text-sm font-serif font-semibold">
+                Laura Milena Andrade Perez
+              </p>
+              <p className="text-white/40 text-xs mt-0.5">
+                Nutricionista MBA &nbsp;·&nbsp; Cód. CPN 201-10
+              </p>
+            </div>
+            <Image
+              src="/footer.png"
+              alt="Logo footer"
+              width={260}
+              height={80}
+              className="object-contain opacity-80"
+              draggable={false}
+            />
           </div>
-          <Image
-            src="/footer.png"
-            alt="Logo footer"
-            width={260}
-            height={80}
-            className="object-contain opacity-80"
-            draggable={false}
-          />
           <p className="text-white/25 text-xs text-center">
             © {new Date().getFullYear()} Todos los derechos reservados. Material de uso académico restringido.
           </p>
