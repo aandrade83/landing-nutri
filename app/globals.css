@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal-900: #0d3b3b;
+  --teal-700: #157a7a;
+  --gold-400: #d4a843;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Block right-click globally */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* Allow text selection only on text content */
+p, h1, h2, h3, h4, span.selectable {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+
+/* Video container */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  background: #000;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+  max-height: 70vh;
+}
+
+/* Watermark */
+.video-watermark {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.55;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+/* Divider line */
+.divider-gold {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-400), transparent);
+  border: none;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Card glass effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

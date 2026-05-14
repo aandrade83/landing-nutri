@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-eslint --import-alias \"@/*\" --yes)",
+      "Bash(New-Item -ItemType Directory -Force public)",
+      "Bash(Out-Null)",
+      "Bash(Move-Item -Path \"hls\" -Destination \"public\\\\hls\" -Force)",
+      "Bash(Move-Item -Path \"ucr.png\" -Destination \"public\\\\ucr.png\" -Force)",
+      "Bash(Write-Host \"Moved successfully\")",
+      "PowerShell(New-Item *)"
+    ]
+  }
+}
